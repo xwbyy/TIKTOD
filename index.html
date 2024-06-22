@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLSHOP - Jasa Tambah View TikTok</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        /* Global CSS */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header-title {
+            font-family: 'Lobster', cursive;
+            font-size: 36px;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            background-color: #ff66a3;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .intro,
+        .packages,
+        .why-us,
+        .payment,
+        .testimonials,
+        .faq,
+        .contact {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border: 2px solid #ff66a3;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .fade-in {
+            animation: fadeInAnimation ease 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .testimonial-content {
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 10px;
+            transition: transform 0.5s ease;
+            display: none;
+        }
+
+        .testimonial-content.active {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .testimonial-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+            background-color: #ccc; /* Placeholder color */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .testimonial-text {
+            flex: 1;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .testimonial-date {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .testimonial-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .testimonial-nav button {
+            background-color: #ff3385;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .testimonial-nav button:hover {
+            background-color: #ff66a3;
+        }
+
+        .order-button {
+            display: inline-block;
+            background-color: #ff3385;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .order-button:hover {
+            background-color: #ff66a3;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #ff3385;
+            color: white;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+
+        footer .socials a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-title {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-title">
+        <h1>VLSHOP</h1>
+    </div>
+
+    <div class="content">
+        <section id="intro" class="intro fade-in">
+            <h2>Jasa Tambah View TikTok Terbaik Dan Terpercaya</h2>
+            <p>Ingin video TikTok Anda lebih populer? Kami hadir untuk membantu Anda! Pilih paket terbaik sesuai kebutuhan Anda:</p>
+        </section>
+
+        <section id="packages" class="packages fade-in">
+            <h3>🔹Paket Dasar🔹</h3>
+            <ul>
+                <li>10.000 IDR = 3.000 view</li>
+                <li>15.000 IDR = 6.000 view</li>
+                <li>20.000 IDR = 8.000 view</li>
+            </ul>
+            <h3>🔹Paket Kombinasi🔹</h3>
+            <ul>
+                <li>30.000 IDR = 20.000 view</li>
+                <li>40.000 IDR = 30.000 view</li>
+                <li>50.000 IDR = 40.000 view</li>
+                <li>🎉 Bonus Favorit dan Share dengan Pembelian Paket Kombinasi! 🎉</li>
+            </ul>
+        </section>
+
+        <section id="why-us" class="why-us fade-in">
+            <h3>💯 Mengapa Memilih Kami?</h3>
+            <ul>
+                <li>View asli dan berkualitas</li>
+                <li>Proses cepat dan aman</li>
+                <li>Tidak ada penurunan jumlah view (No Drop)</li>
+                <li>Permanen dan terjamin</li>
+                <li>Harga bersaing</li>
+                <li>Cukup kirim link video, tidak perlu kata sandi</li>
+            </ul>
+        </section>
+
+        <section id="payment" class="payment fade-in">
+            <h3>💳 Metode Pembayaran</h3>
+            <ul>
+                <li>OVO</li>
+                <li>DANA</li>
+                <li>QRIS Allpayment</li>
+                <li>GOPAY</li>
+                <li>Shopee Pay</li>
+            </ul>
+        </section>
+
+        <section id="testimonials" class="testimonials fade-in">
+            <h3>💬 Testimoni Pelanggan</h3>
+            <div class="testimonial-content active">
+                <div class="testimonial-image" style="background-image: url('media/testimoni1.jpg');"></div>
+                <div class="testimonial-text">
+                    <div class="testimonial-author">Ani</div>
+                    <div class="testimonial-date">22 Juni 2024</div>
+                    <p>"VLSHOP benar-benar membantu meningkatkan view TikTok saya. Layanan cepat dan efisien!"</p>
+                </div>
+            </div>
+            <div class="testimonial-content">
+                <div class="testimonial-image" style="background-image: url('media/testimoni2.jpg');"></div>
+                <div class="testimonial-text">
+                    <div class="testimonial-author">Budi</div>
+                    <div class="testimonial-date">23 Juni 2024</div>
+                    <p>"Paket combo sangat menguntungkan! Bonus like dan share sangat membantu."</p>
+                </div>
+            </div>
+            <div class="testimonial-content">
+                <div class="testimonial-image" style="background-image: url('media/testimoni3.jpg');"></div>
+                <div class="testimonial-text">
+                    <div class="testimonial-author">Charlie</div>
+                    <div class="testimonial-date">24 Juni 2024</div>
+                    <p>"Saya sangat puas dengan layanan dari VLSHOP. Terima kasih banyak!"</p>
+                </div>
+            </div>
+            <div class="testimonial-content">
+                <div class="testimonial-image" style="background-image: url('media/testimoni4.jpg');"></div>
+                <div class="testimonial-text">
+                    <div class="testimonial-author">Diana</div>
+                    <div class="testimonial-date">25 Juni 2024</div>
+                    <p>"Terbaik! View TikTok saya meningkat pesat setelah menggunakan layanan ini."</p>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button onclick="showTestimonial(0)">1</button>
+                <button onclick="showTestimonial(1)">2</button>
+                <button onclick="showTestimonial(2)">3</button>
+                <button onclick="showTestimonial(3)">4</button>
+            </div>
+        </section>
+
+        <section id="faq" class="faq fade-in">
+            <h3>❓ Pertanyaan Umum (FAQ)</h3>
+            <ul>
+                <li><strong>Apakah jumlah view yang saya beli akan berkurang?</strong> Tidak, view yang Anda beli adalah permanen dan terjamin keberadaannya.</li>
+                <li><strong>Berapa lama waktu yang dibutuhkan untuk menambahkan view?</strong> Prosesnya biasanya memakan waktu 1-3 jam setelah konfirmasi pembayaran.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact fade-in">
+            <h3>Pesan Sekarang!</h3>
+            <div class="cta">
+                <a class="order-button" href="https://wa.me/6282220008678" target="_blank">Pesan Sekarang</a>
+                <a class="order-button" href="https://whatsapp.com/channel/0029VagAx5E8KMqhifoSVb1R" target="_blank">Lihat Testimoni</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 VLSHOP. Hak cipta dilindungi undang-undang.</p>
+        <div class="socials">
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const testimonials = document.querySelectorAll('.testimonial-content');
+            testimonials[0].classList.add('active');
+        });
+
+        function showTestimonial(index) {
+            const testimonials = document.querySelectorAll('.testimonial-content');
+            testimonials.forEach((testimonial, i) => {
+                if (i === index) {
+                    testimonial.classList.add('active');
+                } else {
+                    testimonial.classList.remove('active');
+                }
+            });
+        }
+
+        // Animasi saat digulir
+        const sections = document.querySelectorAll('.fade-in');
+        const options = {
+            rootMargin: '0px',
+            threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+
+</html>
