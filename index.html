@@ -91,7 +91,7 @@
             height: 80px;
             border-radius: 50%;
             margin-right: 20px;
-            background-color: #ccc; /* Placeholder color */
+            background-color: #ccc;
             background-size: cover;
             background-position: center;
         }
@@ -169,6 +169,133 @@
                 font-size: 24px;
             }
         }
+
+        /* Floating button CSS */
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff3385;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #ff66a3;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+            position: relative;
+        }
+
+        .modal-content input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .modal-content button {
+            background-color: #ff3385;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .modal-content button:hover {
+            background-color: #ff66a3;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ff3385;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .user-info {
+            display: none;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .user-info img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .user-info .user-details {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-info p {
+            margin: 5px 0;
+        }
+
+        .loading-animation {
+            display: none;
+            margin: 20px 0;
+        }
+
+        .loading-animation .loader {
+            border: 4px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 4px solid #ff66a3;
+            width: 40px;
+            height: 40px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
 
@@ -184,35 +311,41 @@
         </section>
 
         <section id="packages" class="packages fade-in">
-            <h3>🔹Paket Dasar🔹</h3>
-            <ul>
-                <li>10.000 IDR = 3.000 view</li>
-                <li>15.000 IDR = 6.000 view</li>
-                <li>20.000 IDR = 8.000 view</li>
-            </ul>
-            <h3>🔹Paket Kombinasi🔹</h3>
-            <ul>
-                <li>30.000 IDR = 20.000 view</li>
-                <li>40.000 IDR = 30.000 view</li>
-                <li>50.000 IDR = 40.000 view</li>
-                <li>🎉 Bonus Favorit dan Share dengan Pembelian Paket Kombinasi! 🎉</li>
-            </ul>
+      <h3>📦 Paket Kami</h3>
+<ul>
+    <li>
+        <strong>Paket Dasar</strong><br>
+        10.000 IDR = 3.000 view<br>
+        15.000 IDR = 6.000 view<br>
+        20.000 IDR = 8.000 view
+    </li>
+    <li>
+        <strong>Paket Kombinasi</strong><br>
+        30.000 IDR = 20.000 view<br>
+        40.000 IDR = 30.000 view<br>
+        50.000 IDR = 40.000 view
+    </li>
+</ul>
+<p style="text-align: center; margin-top: 10px;">
+    🎉 Bonus Favorit dan Share dengan Pembelian Paket Kombinasi! 🎉
+</p>
+
+
         </section>
 
         <section id="why-us" class="why-us fade-in">
-            <h3>💯 Mengapa Memilih Kami?</h3>
+            <h3>❓ Mengapa Memilih Kami?</h3>
             <ul>
-                <li>View asli dan berkualitas</li>
-                <li>Proses cepat dan aman</li>
-                <li>Tidak ada penurunan jumlah view (No Drop)</li>
-                <li>Permanen dan terjamin</li>
-                <li>Harga bersaing</li>
-                <li>Cukup kirim link video, tidak perlu kata sandi</li>
+                <li>Harga Terjangkau</li>
+                <li>Layanan Cepat</li>
+                <li>Jaminan View Asli</li>
+                <li>Privasi Terjamin</li>
             </ul>
         </section>
 
         <section id="payment" class="payment fade-in">
-            <h3>💳 Metode Pembayaran</h3>
+            <h3>💰 Pembayaran</h3>
+            <p>Kami menerima pembayaran melalui:</p>
             <ul>
                 <li>OVO</li>
                 <li>DANA</li>
@@ -290,8 +423,156 @@
         </div>
     </footer>
 
+    <!-- Floating Button -->
+    <button class="floating-button" onclick="openModal()">+</button>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">X</button>
+            <h2>Masukkan Username TikTok</h2>
+            <input type="text" id="usernameInput" placeholder="Username TikTok">
+            <button onclick="fetchTikTokData()">Cari</button>
+            <div class="loading-animation" id="loadingAnimation">
+                <div class="loader"></div>
+            </div>
+            <div class="user-info" id="userInfo">
+                <div class="user-details">
+                    <img id="profilePic" src="" alt="Profile Picture">
+                    <div>
+                        <p id="username"></p>
+                        <p id="followers"></p>
+                        <p id="following"></p>
+                        <p id="likes"></p>
+                        <p id="videoCount"></p>
+                        <p id="diggCount"></p>
+                        <p id="verified"></p>
+                        <p id="privateAccount"></p>
+                        <p id="underAge18"></p>
+                        <p id="secret"></p>
+                        <p id="bio"></p>
+                        <p id="userID"></p>
+                        <p id="secUID"></p>
+                        <p id="ftc"></p>
+                        <p id="openFavorite"></p>
+                    </div>
+                </div>
+                <button onclick="resetStalker()">Reset</button>
+            </div>
+            <h2>Masukkan URL Video TikTok</h2>
+            <input type="text" id="videoUrlInput" placeholder="URL Video TikTok">
+            <button onclick="downloadTikTokVideo()">Download</button>
+            <div id="videoDownloadInfo" class="user-info">
+                <div class="user-details">
+                    <img id="videoThumbnail" src="" alt="Video Thumbnail">
+                    <div>
+                        <p id="videoTitle"></p>
+                        <p><a id="videoDownloadLink" href="#" target="_blank">Download Video</a></p>
+                        <p><a id="audioDownloadLink" href="#" target="_blank">Download Audio</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+        // Floating button and modal scripts
+        function openModal() {
+            document.getElementById('myModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('myModal')) {
+                closeModal();
+            }
+        }
+
+        // Function to fetch TikTok data
+        async function fetchTikTokData() {
+            const username = document.getElementById('usernameInput').value;
+            if (username) {
+                document.getElementById('loadingAnimation').style.display = 'block';
+                try {
+                    const response = await fetch(`https://skizo.tech/api/ttstalk?apikey=sweattheartkyl&user=${username}`);
+                    const data = await response.json();
+                    document.getElementById('loadingAnimation').style.display = 'none';
+                    if (data.code === 0) {
+                        displayUserInfo(data.data);
+                    } else {
+                        alert('User not found');
+                    }
+                } catch (error) {
+                    document.getElementById('loadingAnimation').style.display = 'none';
+                    console.error('Error fetching TikTok data:', error);
+                }
+            } else {
+                alert('Please enter a username');
+            }
+        }
+
+        function displayUserInfo(data) {
+            const user = data.user;
+            const stats = data.stats;
+
+            document.getElementById('profilePic').src = user.avatarLarger;
+            document.getElementById('username').innerText = `Username: ${user.uniqueId}`;
+            document.getElementById('followers').innerText = `Followers: ${stats.followerCount}`;
+            document.getElementById('following').innerText = `Following: ${stats.followingCount}`;
+            document.getElementById('likes').innerText = `Likes: ${stats.heartCount}`;
+            document.getElementById('videoCount').innerText = `🎥 Video: ${stats.videoCount}`;
+            document.getElementById('diggCount').innerText = `👍 Digg: ${stats.diggCount}`;
+            document.getElementById('verified').innerText = `🔗 Verified: ${user.verified}`;
+            document.getElementById('privateAccount').innerText = `🔒 Private Account: ${user.privateAccount}`;
+            document.getElementById('underAge18').innerText = `🔞 Under Age 18: ${user.underAge18}`;
+            document.getElementById('secret').innerText = `🔒 Secret: ${user.secret}`;
+            document.getElementById('bio').innerText = `📑 Bio: ${user.signature}`;
+            document.getElementById('userID').innerText = `🆔 User ID: ${user.id}`;
+            document.getElementById('secUID').innerText = `👤 Sec UID: ${user.secUid}`;
+            document.getElementById('ftc').innerText = `💼 FTC: ${user.ftc}`;
+            document.getElementById('openFavorite').innerText = `⭐ Open Favorite: ${user.openFavorite}`;
+
+            document.getElementById('userInfo').style.display = 'block';
+        }
+
+        function resetStalker() {
+            document.getElementById('userInfo').style.display = 'none';
+            document.getElementById('usernameInput').value = '';
+        }
+
+        // Function to download TikTok video
+        async function downloadTikTokVideo() {
+            const videoUrl = document.getElementById('videoUrlInput').value;
+            if (videoUrl) {
+                try {
+                    const response = await fetch(`https://aemt.me/download/tikdl?url=${encodeURIComponent(videoUrl)}`);
+                    const data = await response.json();
+                    if (data.status) {
+                        displayVideoDownloadInfo(data.result);
+                    } else {
+                        alert('Failed to fetch video data');
+                    }
+                } catch (error) {
+                    console.error('Error downloading TikTok video:', error);
+                }
+            } else {
+                alert('Please enter a video URL');
+            }
+        }
+
+        function displayVideoDownloadInfo(result) {
+            document.getElementById('videoThumbnail').src = result.thumbnail;
+            document.getElementById('videoTitle').innerText = `Title: ${result.title}`;
+            document.getElementById('videoDownloadLink').href = result.video[0];
+            document.getElementById('audioDownloadLink').href = result.audio[0];
+
+            document.getElementById('videoDownloadInfo').style.display = 'block';
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
             const testimonials = document.querySelectorAll('.testimonial-content');
             testimonials[0].classList.add('active');
         });
@@ -314,7 +595,7 @@
             threshold: 0.2
         };
 
-        const observer = new IntersectionObserver(function (entries, observer) {
+        const observer = new IntersectionObserver(function(entries, observer) {
             entries.forEach(entry => {
                 if (!entry.isIntersecting) {
                     return;
